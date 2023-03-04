@@ -121,10 +121,72 @@ body{
 
 section .page-1{
     height: 100vh;
-    /* background: url(../imgs/phone.jpg);
-    background-size: cover; */
 }
 
+.container-1{
+    width: 50%;
+    height: 100vh;
+    display: inline;
+    float: left;
+}
+
+.container-1 img{
+    width: 75%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    box-shadow: 10px 10px #012e40;
+    transition: 1.5s;
+}
+
+.container-1 img:hover{
+    width: 75%;
+    position: relative;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    box-shadow: 10px 10px #012e40;
+    transition: 1.5s;
+}
+
+.container-2{
+    display: inline;
+    float: right;
+    width: 50%;
+    height: 100vh;
+}
+
+.container-2 p{
+    width: 80%;
+    text-align: justify;
+    color: #9AEBA3;
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-start{
+    padding: 1.5rem 4rem;
+    background: transparent;
+    border-radius: 12px;
+    border: 2px solid #012E40;
+    color: #012E40;
+    font-size: large;
+    font-weight: bold;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.6s;
+}
+
+.btn-start:hover{
+    border: 2px solid #9AEBA3;
+    color: #9AEBA3;
+    transition: 0.6s;
+}
 
 section .page-2{
     height: 100vh;
