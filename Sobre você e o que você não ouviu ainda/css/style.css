@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tilt Neon', cursive;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(-90deg, #042940, #008F8C);
+}
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.disc {
+    width: 28rem;
+    height: 28rem;
+    background: url(../imgs/perfil2.png);
+    background-size: cover;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.disc:hover {
+    width: 28rem;
+    height: 28rem;
+    background: url(../imgs/perfil2.png);
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: 10rem;
+    transition: 1s;
+}
+
+.disc:active {
+    width: 40rem;
+    height: 40rem;
+    background: url(../imgs/perfil2.png);
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: 0rem;
+    transition: 0.2s;
+}
+
+.card {
+    width: 30rem;
+    height: 30rem;
+    background: url(../imgs/capa.jpg);
+    background-size: cover;
+    transition: 1s;
+}
+
+.card:hover {
+    width: 30rem;
+    height: 30rem;
+    background: url(../imgs/capa.jpg);
+    background-size: cover;
+    margin-left: -10rem;
+    transition: 1s;
+}
+
+.card:active {
+    width: 0rem;
+    height: 40rem;
+    border: 0px;
+    transition: 0.2s;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    background: #012E40;
+    text-align: center;
+    padding: 2rem;
+}
+
+.navbar a{
+    color: #45C4B0;
+    text-decoration: none;
+    margin: 2rem;
+}
+
+.navbar a:hover{
+    color: #9AEBA3;
+}
+
+.btn-exit{
+    background: #45C4B0;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+}
+
+.btn-exit:hover{
+    box-shadow: 0px 0px 15px #45C4B0;
+}
+
+.btn-exit a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+.btn-exit a:hover{
+    color: #F2E3D5;
+}
+
+section .page-1{
+    height: 100vh;
+    /* background: url(../imgs/phone.jpg);
+    background-size: cover; */
+}
+
+
+section .page-2{
+    height: 100vh;
+    background: #3CA6A6;
+}
+
+/* Apenas para consulta */
+Paleta de Cores{
+    background: #012E40;
+    background: #024959;
+    background: #026773;
+    background: #3CA6A6;
+    background: #45C4B0;
+    background: #9AEBA3;
+    background: #DAFDBA;
+    background: #F2E3D5;
+}
