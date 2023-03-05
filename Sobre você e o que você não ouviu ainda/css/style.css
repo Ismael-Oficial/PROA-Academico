@@ -175,7 +175,7 @@ section .page-1{
     font-size: large;
     font-weight: bold;
     position: relative;
-    top: 25%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: 0.6s;
@@ -197,12 +197,18 @@ section .page-2{
     position: absolute;
     text-align: center;
     margin-top: 3rem;
+    color: #45C4B0;
+}
+
+.title p{
+    margin: 1rem;
+    /*color: #F2E3D5;*/
 }
 
 .container-3{
     width: 100%;
     position: absolute;
-    margin-top: 8rem;
+    margin-top: 10rem;
     display: flex;
     justify-content: space-around;
 
@@ -239,6 +245,38 @@ section .page-2{
 .modal p{
     text-align: justify;
     margin: 15px;
+    /*color: #F2E3D5;*/
+}
+
+section .page-3, section .page-5{
+    height: 100vh;
+    background: #026773;
+}
+
+.page-3 .container-3, .page-4 .container-3, .page-5 .container-3{
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.page-6 .container-3{
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section .page-4{
+    height: 100vh;
+    background: url(../imgs/restaurant.jpg);
+    background-size: cover;
+    /*background: #3CA6A6;*/
+}
+
+section .page-6{
+    height: 100vh;
+    background: #3CA6A6;
 }
 
 /* Apenas para consulta */
