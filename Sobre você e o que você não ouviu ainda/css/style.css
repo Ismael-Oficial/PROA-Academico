@@ -73,7 +73,6 @@ body{
 }
 
 .navbar{
-    position: fixed;
     width: 100%;
     background: #012E40;
     text-align: center;
@@ -133,7 +132,7 @@ section .page-1{
 .container-1 img{
     width: 75%;
     position: relative;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -40%);
     box-shadow: 10px 10px #012e40;
@@ -143,7 +142,7 @@ section .page-1{
 .container-1 img:hover{
     width: 75%;
     position: relative;
-    top: 45%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -40%);
     box-shadow: 10px 10px #012e40;
@@ -162,7 +161,7 @@ section .page-1{
     text-align: justify;
     color: #9AEBA3;
     position: relative;
-    top: 30%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -176,7 +175,7 @@ section .page-1{
     font-size: large;
     font-weight: bold;
     position: relative;
-    top: 40%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: 0.6s;
@@ -189,8 +188,57 @@ section .page-1{
 }
 
 section .page-2{
-    height: 100vh;
+    height: 150vh;
     background: #3CA6A6;
+}
+
+.title{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.container-3{
+    width: 100%;
+    position: absolute;
+    margin-top: 8rem;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.container-4{
+    width: 100%;
+    position: absolute;
+    margin-top: 42rem;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.modal{
+    width: 280px;
+    height: 400px;
+    background: #2a2a2a;
+    color: #45C4B0;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal span{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.modal p{
+    text-align: justify;
+    margin: 15px;
 }
 
 /* Apenas para consulta */
