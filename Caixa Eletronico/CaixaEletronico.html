@@ -9,7 +9,7 @@
 		var saldo = 100.5; //Float
 		function inicio() {
 
-			var escolha = parseInt(prompt('Selecione uma opção: \n 1 - Saldo \n 2 - Depósito \n 3 - Saque  \n 4 - Extrato \n 5 - Sair'));
+			var escolha = parseInt(prompt('Selecione uma opção: \n 1 - Saldo \n 2 - Depósito \n 3 - Saque  \n 4 - Extrato \n 5 - Transferência \n 6 - Sair'));
 
 			if (escolha === 1) {
 				ver_saldo();
@@ -20,6 +20,8 @@
 			} else if (escolha === 4) {
 				ver_extrato();
 			} else if (escolha === 5) {
+				transferencia();
+			} else if (escolha === 6) {
 				sair();
 			} else {
 				erro();
@@ -75,6 +77,33 @@
 				break;
 
 				case extrato = false:
+					alert(inicio())
+				break;
+			}
+		}
+
+		function transferencia() {
+			var pessoa = prompt("Digite o nome da Pessoa que deseja realizar a operação")
+			var valor = prompt("Digite o valor que deseja transferir")
+
+			var enviar = confirm("Você realizará uma tranferência para " + pessoa + " no valor de R$" + valor)
+			switch (enviar)
+			{
+				case enviar = true:
+					if (saldo >= valor){
+						alert("Operação Realizada!")
+						saldo -= valor;
+
+					ver_saldo();
+					}
+					else{
+						alert("Você não pode realizar a operação, valor em conta é de " + saldo)
+					}
+					alert(inicio())
+				break;
+
+				case enviar = false:
+					alert("Operação Cancelada!")
 					alert(inicio())
 				break;
 			}
