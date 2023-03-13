@@ -9,7 +9,7 @@
 		var saldo = 100.5; //Float
 		function inicio() {
 
-			var escolha = parseInt(prompt('Selecione uma opção: 1. Saldo | 2. Depósito | 3. Saque | 4. Sair'));
+			var escolha = parseInt(prompt('Selecione uma opção: \n 1 - Saldo \n 2 - Depósito \n 3 - Saque  \n 4 - Extrato \n 5 - Sair'));
 
 			if (escolha === 1) {
 				ver_saldo();
@@ -18,6 +18,8 @@
 			} else if (escolha === 3) {
 				fazer_saque();
 			} else if (escolha === 4) {
+				ver_extrato();
+			} else if (escolha === 5) {
 				sair();
 			} else {
 				erro();
@@ -58,6 +60,23 @@
 				alert("Valor do Saque Superior ao Saldo em conta!")
 
 				ver_saldo();
+			}
+		}
+
+		function ver_extrato() {
+
+			var extrato = confirm("Deseja consultar seu extrato?")
+			
+			switch (extrato)
+			{
+				case extrato = true:
+				alert("Data: 01/03 à 15/03 \n\n - Playstation 4 R$2.000,00 \n - Tv 40' Samsung R$1.560,00 \n - Caixa de Som JBL R$800,00 \n\n SubTotal: R$ 4.400")
+				alert(inicio())
+				break;
+
+				case extrato = false:
+					alert(inicio())
+				break;
 			}
 		}
 
