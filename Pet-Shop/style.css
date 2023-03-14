@@ -67,7 +67,7 @@ h3 {
 
 /* Produtos */
 
-.title{
+.title {
     background: #15ca61;
     width: 80%;
     margin: 0 auto;
@@ -107,7 +107,7 @@ span {
     transition: 0.8s;
 }
 
-.btn-start{
+.btn-start {
     background: #15ca61;
     position: fixed;
     bottom: 15px;
@@ -117,7 +117,8 @@ span {
     border-radius: 12px;
 }
 
-.btn-start span, .btn-start a{
+.btn-start span,
+.btn-start a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,16 +172,16 @@ span {
 
 .card p {
     text-align: justify;
-    margin: 15px;
+    margin: 10px;
 }
 
 /* Fale Conosco */
 
 .content {
     width: 650px;
-    height: 550px;
+    height: auto;
     margin: 0 auto;
-    margin-top: 5%;
+    margin-top: 2%;
     display: flex;
     justify-content: center;
     background: #15ca61;
@@ -207,6 +208,33 @@ form {
     border-radius: 8px;
 }
 
+.dual input {
+    width: 49.5%;
+}
+
 textarea {
     height: 150px;
+}
+
+select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+}
+
+.btn-enviar {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.icons img{
+    margin: 2rem;
 }
